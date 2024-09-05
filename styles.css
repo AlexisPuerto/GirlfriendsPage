@@ -1,27 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #d8aaff, #a29bfe);
-    font-family: 'Poppins', sans-serif; /* Cambiar la fuente principal */
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-size: 200% 200%;
-    animation: gradientBG 10s ease infinite;
-}
-
-@keyframes gradientBG {
-    0% { background-position: 0% 0%; }
-    50% { background-position: 100% 100%; }
-    100% { background-position: 0% 0%; }
+    background: url('images/fondo1.jpg') no-repeat center center fixed; /* Reemplaza 'tu-imagen.jpg' con el nombre de tu archivo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
 }
 
 .container {
     text-align: center;
-    max-width: 50%; /* Reducir el ancho máximo para ocupar menos espacio horizontal */
-    padding: 20px; /* Ajustar el padding */
+    max-width: 50%;
+    padding: 20px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para destacar el contenido */
+    border-radius: 15px; /* Bordes redondeados */
 }
 
 .date, .version {
@@ -31,7 +26,7 @@ body {
 }
 
 .roulette {
-    margin: 10px 0; /* Reducir el margen para ocupar menos espacio vertical */
+    margin: 10px 0;
     position: relative;
 }
 
@@ -52,7 +47,7 @@ body {
 
 .message {
     font-size: 20px;
-    color: #fff;
+    color: rgba(75, 3, 71, 0.959);
     margin-top: 10px;
     font-family: 'Caveat', cursive; /* Fuente decorativa */
     font-weight: bold;
@@ -69,3 +64,10 @@ body {
     }
 }
 
+/* Añadido al final del archivo CSS */
+.countdown {
+    font-size: 18px;
+    color: #5a0202;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
